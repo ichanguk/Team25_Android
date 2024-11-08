@@ -44,25 +44,9 @@ class ReservationStep9Fragment : Fragment() {
     ) {
         super.onViewCreated(view, savedInstanceState)
         setManagerRecyclerView()
-        collectReservationInfo()
         collectManagerData()
         setManagerSearchListener()
         navigateToPrevious()
-    }
-
-    private fun collectReservationInfo() {
-        lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.STARTED) {
-                reservationInfoViewModel.reservationInfo.collectLatest {reservationInfo ->
-                    val date = reservationInfo.reservationDateTime.substringBefore(" ")
-                    val region = reservationInfo.sido
-
-                    Log.d("datt", date)
-
-                    managerViewModel.fetchManagers(date, "부산광역시 남구")
-                }
-            }
-        }
     }
 
     private fun collectManagerData() {

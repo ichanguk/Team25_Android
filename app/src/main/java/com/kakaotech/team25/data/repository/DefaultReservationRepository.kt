@@ -1,12 +1,9 @@
 package com.kakaotech.team25.data.repository
 
 import android.util.Log
-import com.kakaotech.team25.data.dao.ReservationDao
-import com.kakaotech.team25.data.entity.mapper.asDomainFromDto
-import com.kakaotech.team25.data.entity.mapper.asDomainFromEntity
-import com.kakaotech.team25.data.entity.mapper.asEntity
 import com.kakaotech.team25.data.network.calladapter.Result.*
 import com.kakaotech.team25.data.network.dto.ReserveDto
+import com.kakaotech.team25.data.network.dto.mapper.asDomain
 import com.kakaotech.team25.data.remote.ReservationApiService
 import com.kakaotech.team25.domain.model.ReservationInfo
 import com.kakaotech.team25.domain.ReservationStatus
