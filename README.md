@@ -1,5 +1,9 @@
 # Team25_Android
 
+<img src="https://github.com/user-attachments/assets/8fcad6d6-4464-40f5-b97f-048d49786a5d" width="300" height="150"/>
+<br>
+🏆 카카오 테크 캠퍼스 최종 산출물 29팀 중 우수상
+
 ![image](https://github.com/user-attachments/assets/121ff619-5adf-49ca-8128-5d677da23bc6)
 
 > 목차
